@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* : class */
+        ul li:first-child{
+            background-color: lightcoral;
+        }
+        ul li:last-child{
+            background-color: aqua;
+        }
+        ul li:nth-child(3){
+            background-color: rebeccapurple;
+        }
+        ul li:nth-child(even){
+            background-color: lightgreen;
+        }
+        ul li:nth-child(odd){
+            background-color: aqua;
+        }
+        ul li:nth-last-child(1){
+            background-color: red;
+        }
+        .main{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+             transition: 1s;
+        }
+        .main:hover{
+            background-color: lightcoral;
+            border-radius: 56px;
+           transform: translate(100px);
+        }
+        input{
+            margin-top: 40px;
+            border: none;
+        }
+        input:focus{
+            background-color: lightblue;
+            color: white;
+            border: 3px solid green;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- class :
+        element  :: 
+    -->
+
+    <ul>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+        <li>home</li>
+    </ul>
+
+
+    <div class="main"></div>
+
+    <!-- hover : 
+     
+        1) prenent apply allow prenet
+        2) prenent to child allow 
+
+        3) child hover and prenent movmemnt not allow
+    -->
+
+    <input type="text" placeholder="Enter your name">
+    
+</body>
+</html>
