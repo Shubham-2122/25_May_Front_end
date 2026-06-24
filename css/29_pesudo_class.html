@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-child{
+            background-color: lightcoral;
+        }
+        ul li:last-child{
+            background-color: gold;
+        }
+        ul li:nth-child(3){
+            background-color: aqua;
+        }
+        ul li:nth-child(even){
+            background-color: lightcoral;
+        }
+        ul li:nth-child(odd){
+            background-color: lightgreen;
+        }
+        ul li:nth-last-child(3){
+            background-color: rebeccapurple;
+        }
+        .main{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            transition: 1s;
+        }
+        .main:hover{
+            background-color: lightcoral;
+            transform: translate(100px,100px);
+            border-radius: 40px;
+        }
+        input{
+            margin-top: 40px;
+        }
+        input:focus{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <!-- : class 
+
+    :: element -->
+
+    <ul>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+    </ul>
+
+    <div class="main">
+
+    </div>
+
+    <!-- hover :
+     
+        perent div : perent
+        perent div : child 
+        child div : child
+
+        child div : perent not possible
+    -->
+
+    <input type="text">
+
+</body>
+</html>
