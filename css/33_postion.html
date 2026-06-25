@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 800px;
+            background-color: orange;
+            display: flex;
+            border: 2px solid gray;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+        }
+        /* #box1{
+            background-color: lightblue;
+            position: static;
+            top: 200px;
+        } */
+         /* #box2{
+            background-color: lightcoral;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+         } */
+          /* #box3{
+            background-color: aqua;
+            position: sticky;
+            top: 0;
+          } */
+
+          /* #box4{
+            position: relative;
+            top: 20px;
+            left: 20px;
+          } */
+        #box5{
+            position: relative;
+        }
+          .box1{
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            background: aqua;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            /* bottom: 0;
+            right: 0; */
+          }
+    </style>
+</head>
+<body>
+    <!-- position : 
+    1) static (defualt): top,bottom,left,right , px,%,rem,em
+    2) fixed (body tag) : top,bottom,left,right , px,%,rem,em
+    3) sticky (section tag) :top,bottom,left,right , px,%,rem,em
+    4) reletive (perent div) : top,bottom,left,right , px,%,rem,em
+    5) absulate (child div) : top,bottom,left,right , px,%,rem,em -->
+
+    <div class="main">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">
+            <div class="box1">5</div>
+        </div>
+        <div class="box">6</div>
+    </div>
+    <div class="main"></div>
+    <div class="main"></div>
+
+</body>
+</html>
