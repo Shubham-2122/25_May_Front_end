@@ -15,6 +15,7 @@
     background-image: url("/Images/header.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+
 }
 
 .nav {
@@ -47,38 +48,93 @@
     font-family: "Roboto";
 }
 
-.nav .icons {
+.nav .icons .search {
     color: white;
     font-size: 24px;
 }
-.header-content{
+
+.nav .icons .bar {
+    color: white;
+    font-size: 24px;
+    display: none;
+}
+
+.header-content {
     padding: 70px 0px;
+    color: #ffffff;
+    font-family: "Roboto";
 }
 
 .header-content .header-h1 {
     width: 70%;
-    font-size: 83px;
-    color: #ffffff;
-    font-family: "Roboto";
+    /* font-size: 83px; */
+    /* min,vw,max */
+    font-size: clamp(20px, 7.6vw, 83px);
 }
 
 .header-content .header-p {
     width: 50%;
-    font-size: 33px;
-    color: #ffffff;
+    font-size: clamp(16px, 3.5vw, 33px);
     font-weight: 400;
-    font-family: "Roboto";
     margin-top: 10px;
     margin-bottom: 50px;
 }
 
 .header-content .header-btn {
-    font-size: 30px;
+    font-size: clamp(16px, 3.5vw, 33px);
     color: #ffffff;
-    font-family: "Roboto";
     border-radius: 37px;
     background-color: #8c9e00;
     padding: 10px 20px;
 }
 
 /* header end */
+
+/* menu start */
+
+#menu {
+    background-color: #ffbe5c;
+    padding: 20px 0px;
+}
+
+#menu .menu-h1 {
+    font-size: clamp(20px, 6.6vw, 66px);
+    text-transform: uppercase;
+    text-align: center;
+    color: #0e0a17;
+    font-weight: bold;
+    font-family: "Roboto"
+}
+.card-content{
+    margin: 20px 0px;
+}
+.card-content .row {
+    display: flex;
+}
+
+.card-content .row .col {
+    /* border: 2px solid; */
+    width: 33.33%;
+}
+
+.card .card-img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-text .card-h4 {
+    text-align: center;
+     font-size: clamp(18px, 4.6vw, 42px);
+    color: #0e0a17;
+    font-family: "Roboto";
+}
+
+.card-text .card-p {
+    width: 90%;
+    font-size: clamp(16px, 3.5vw, 26px);
+    color: #0e0a17;
+    font-family: "Roboto";
+    margin: 10px auto;
+}
+
+/* menu end */
