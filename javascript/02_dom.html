@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- internal js  -->
+
+    <!-- dom : document object model -->
+     <h1 id="h1"></h1>
+
+     <h2 id="h2"></h2>
+
+    <script>
+        // 1) conosle log 
+        console.log("hello javascript")
+         console.log("hello")
+         console.log("sum = ",10+5)
+
+        //  2) dom 
+        // document.writeln("hello")
+        //  document.writeln("<h3>Shubham</h3>")
+
+        //  3) innger text 
+
+        console.log(document.getElementById("h1"))
+        // innertext : only text show
+        document.getElementById("h1").innerText = "Hello shubham";
+
+        // 4) innerHTML : text and tag allow 
+        console.log(document.getElementById("h2"))
+        document.getElementById("h2").innerHTML = "<i>Hello shubham</i>"
+
+
+
+
+        
+    </script>
+
+</body>
+</html>
