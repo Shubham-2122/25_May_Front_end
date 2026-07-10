@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 onmouseenter="demo()" onmouseleave="demo2()" id="h1">Hello this data</h1>
+    <button onclick="demo()">change name</button>
+
+    <script>
+        let h1_tag = document.getElementById("h1")
+        function demo(){
+            h1_tag.innerHTML = "Hello javascript"
+        }
+
+        function demo2(){
+            h1_tag.innerHTML = "Hello html"
+        }
+    </script>
+</body>
+</html>
