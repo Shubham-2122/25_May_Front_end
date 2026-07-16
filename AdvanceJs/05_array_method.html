@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let arr = [1,2,3,4,5]
+
+        console.log(arr)
+
+        // 1) length
+        console.log(arr.length)
+
+        // 2) push after add 
+        arr.push(6)
+        console.log(arr)
+
+        // 3) pop after remove 
+        arr.pop()
+        arr.pop()
+        console.log(arr)
+
+        // 4) Before remove
+        arr.shift()
+        console.log(arr)
+
+        // 5) unshft
+        arr.unshift(1)
+        console.log(arr)
+
+        let arr2 = [6,7,8,9,10]
+
+        let array = arr.concat(arr2)
+        console.log(array)
+
+        console.log(array.reverse())
+
+        const words = ["spray", "elite", "exuberant", "destruction", "present"];
+
+        const res = words.filter((word)=> word.length > 5)
+        console.log(res)
+
+        
+        console.log(words.slice(3))
+        console.log(words.slice(1,4))
+
+    </script>
+
+</body>
+</html>
