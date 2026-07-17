@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- class : collection of data member and member function it's class 
+          : it's blue print object 
+        
+          class clas-name{
+            ()=>{
+                memebr data
+            }
+          }
+
+          const user = new clas-name
+
+        -->
+
+        <script>
+
+            class Bank{
+                x = function details(pin,blance){
+                    let name = "HDFC"
+                    let IFSC = "HDFC0001H"
+                    let bankpin  = pin
+                    let bankblance = blance
+
+                    console.log("Bank name :",name)
+                    console.log("IFSC : ",IFSC),
+                    console.log("BankpIn : ",bankpin)
+                    console.log("blance : ",bankblance)
+                }
+                y = function deposit(){
+                    console.log("Despoit function")
+                }
+            }
+
+            // console.log(Bank) 
+            const user = new Bank;
+            console.log(user)
+            user.x(123,54645)
+            user.y()
+
+
+            const raj = new Bank
+            raj.y()
+            raj.x(345,5765)
+
+
+        </script>
+
+</body>
+</html>

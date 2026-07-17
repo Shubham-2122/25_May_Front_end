@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class AB{
+            //  store and with paramter
+            x = function sum(a,b){
+                console.log("sum :",a+b)
+            }
+            //  store and without paramter
+            y = function sub(){
+                let a =50,b=20;
+                console.log("sub :",a-b)
+            }
+
+            // without store and with paramter  
+            mul(a,b){
+                console.log("mul :",a*b);
+            }
+            // without store and without paramter  
+            divi(){
+                let a =50,b=20;
+                console.log("divi :",a/b)
+            }
+
+        }
+
+        const user = new AB ;
+        console.log(user)
+        user.divi()
+        user.y()
+        user.x(45,23)
+        user.mul(34,23)
+
+    </script>
+</body>
+</html>
