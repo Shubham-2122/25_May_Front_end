@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- callback : outer fucntion calll insted inside fucntion  -->
+
+
+    <script>
+
+        function demo(){
+            console.log("demo funtion")
+        }
+
+        function outside(){
+            demo()
+        }
+        outside()
+
+        setInterval(demo,1000)
+        setTimeout("outside()",1000)
+
+    </script>
+
+</body>
+</html>

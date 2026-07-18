@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inheritance : one proppty to anthoer  
+        1) single 
+        2) multi 
+        3) multile 
+        4) hyrachical
+        5) hybird 
+    -->
+
+    <script>
+
+        class A {
+            data(){
+                console.log("A class")
+            }
+        }
+
+        class B extends A {
+           data2(){
+            console.log("B class")
+           } 
+        }
+
+        const user = new B;
+        user.data2()
+        user.data()
+
+    </script>
+</body>
+</html>
