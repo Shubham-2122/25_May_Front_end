@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Promise : it's object 
+     
+    Req,res : State : respone ,reject 
+    1) Pending  : Api Data Hold 
+    2) fullfield  : Api data Show completed
+    3) rejected : Error 
+
+    let name = new Promise(()=>{})
+     
+    -->
+
+    <script>
+
+        let para = new Promise((res,rej)=>{
+            let x =10 
+            if(x == 11){
+                res("True value")
+            }
+            else{
+                rej("False value")
+            }
+        })
+
+        console.log(para)
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- API rest : Front-end backend 
+    JSON : javascript syntax object notation 
+    -> 1) Easy Read 
+    -> 2) json lighwight server 
+    -> 3) json string
+    
+    [{
+        "id":1,
+        "name":"user",
+        "course":"front-end"
+    }]
+
+    [{
+        id : 1,
+        name :"user",
+        course : "front-end"
+    }]
+
+    -->
+
+    <script>
+
+        let jsondata = `[
+            {
+                "id":1,
+                "name":"ketan",
+                "course":"Front-end"
+            },
+            {
+                "id":2,
+                "name":"het",
+                "course":"back-end"
+            }
+        ]`
+
+        console.log(jsondata)
+        // document.write(jsondata)
+
+        // convbert json string convert object/array
+        let objectdata = JSON.parse(jsondata)
+
+        console.log(objectdata)
+
+        objectdata.forEach(demo => {
+            console.log(demo)
+            document.write(`<h3>id : ${demo.id} name : ${demo.name}</h3>`)
+        });
+
+        let test = [
+            {
+                id:1,
+                name :"shubham",
+                course :"front-end"
+            },
+            {
+                id:2,
+                name :"sujal",
+                course :"back-end"
+            },
+            {
+                id:3,
+                name :"tanay",
+                course :"full-stack"
+            }
+        ]
+
+        console.log(test)
+
+        let str = JSON.stringify(test)
+
+        console.log(str)
+
+    </script>
+
+
+
+</body>
+</html>
