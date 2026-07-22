@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function demo()
+       {
+         fetch("https://6a60ad2ada10c59c1808ef3f.mockapi.io/users",{
+            method:"GET"
+        })
+        .then((data)=>{
+            return data.json()
+        })
+        .then((data)=>{
+            console.log(data)
+        })
+       }
+       demo()
+    </script>
+</body>
+</html>

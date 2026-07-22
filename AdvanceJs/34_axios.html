@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.13.2/dist/axios.min.js"></script>
+</head>
+<body>
+    <!-- axios : back-end data live server 
+        API Respose
+        get,post,delete,put,patch 
+    -->
+
+    <script>
+
+        const getuser = async()=>{
+            try {
+                const res = await axios.get("https://6a60ad2ada10c59c1808ef3f.mockapi.io/users")
+                console.log(res)
+                console.log(res.data)
+            } catch (error) {
+                console.log("APi not Found",error)
+            }
+        }
+        // getuser()
+
+        let person = {
+            name:"ketan",
+            surname:"patel",
+            email:"ketan@gmail.com",
+            city:"surat"
+        }
+
+        const createuser=async()=>{
+            try {
+                const res = await axios.post("https://6a60ad2ada10c59c1808ef3f.mockapi.io/users",person)
+                console.log(res.data)
+            } catch (error) {
+                  console.log("APi not Found",error)
+            }
+        }
+        // createuser()
+
+        // delete 
+
+        const deleteuser =async()=>{
+            try {
+                const res = await axios.delete(`https://6a60ad2ada10c59c1808ef3f.mockapi.io/users/5`)
+                console.log(res.data)
+            } catch (error) {
+                console.log("APi not Found",error)
+            }
+        }
+
+        // deleteuser()
+
+        // single user 
+
+        const signleuser =async(id)=>{
+            try {
+                const res = await axios.get(`https://6a60ad2ada10c59c1808ef3f.mockapi.io/users/${id}`)
+                console.log(res.data)
+            } catch (error) {
+                console.log("APi not Found",error)
+            }
+        }
+        signleuser(2)
+
+        let person1 = {
+            id:"2",
+            name:"varj",
+            surname:"patel",
+            email:"varj@gmail.com",
+            phone:"4357687"
+        }
+
+        const updateUser=async()=>{
+            const res = await axios.put(`https://6a60ad2ada10c59c1808ef3f.mockapi.io/users/${person1.id}`,person1)
+            console.log(res.data)
+        }
+        updateUser()
+
+
+    </script>
+
+</body>
+</html>
