@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animated Register Form</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, #0d6efd, #6610f2, #20c997, #0dcaf0);
+            background-size: 400% 400%;
+            animation: bgAnimation 10s ease infinite;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        @keyframes bgAnimation {
+
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+
+        }
+
+        .register-card {
+
+            width: 100%;
+            max-width: 500px;
+            background: rgba(255, 255, 255, .18);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, .3);
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
+            animation: floatCard 3s ease-in-out infinite;
+        }
+
+        @keyframes floatCard {
+
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+
+        }
+
+        .form-control {
+
+            border-radius: 12px;
+            transition: .4s;
+        }
+
+        .input-group-text {
+
+            border-radius: 12px 0 0 12px;
+        }
+
+        .form-control:focus {
+
+            box-shadow: 0 0 12px rgba(13, 110, 253, .5);
+            border-color: #0d6efd;
+            transform: scale(1.02);
+        }
+
+        .btn-register {
+
+            border-radius: 50px;
+            padding: 12px;
+            font-size: 18px;
+            transition: .4s;
+        }
+
+        .btn-register:hover {
+
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(13, 110, 253, .5);
+        }
+
+        .title {
+
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+        }
+
+        .login-link {
+
+            color: white;
+        }
+
+        .login-link a {
+
+            color: #ffd54f;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="register-card mx-auto">
+
+            <h2 class="title">
+                <i class="bi bi-person-plus-fill"></i>
+                Create Account
+            </h2>
+
+            <form>
+
+                <div class="mb-3">
+                    <label class="form-label text-white">First Name</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                        <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-white">Surname</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person-vcard"></i></span>
+                        <input type="text" class="form-control" placeholder="Surname">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-white">Email</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                        <input type="email" class="form-control" placeholder="Email Address">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-white">Phone</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-white">Password</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label text-white">Confirm Password</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-shield-lock"></i></span>
+                        <input type="password" class="form-control" placeholder="Confirm Password">
+                    </div>
+                </div>
+
+                <div class="d-grid">
+                    <button class="btn btn-warning btn-register">
+                        <i class="bi bi-person-check-fill"></i>
+                        Register
+                    </button>
+                </div>
+
+            </form>
+
+            <hr class="text-white">
+
+            <p class="text-center login-link">
+                Already have an account?
+                <a href="#">Login</a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

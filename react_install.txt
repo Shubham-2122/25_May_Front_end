@@ -1,0 +1,58 @@
+React : Javascript lib 
+
+aguler : 2
+react  : vitrual dom 1 , compoent 
+vue    :
+
+
+Node : javascript runtime 
+ back-end : MERN,MEAN
+cmd : node -v
+
+24.18.1
+node -v 
+npm  -v
+
+npm node package manager : global
+npx : ex
+
+first application React : normal version
+
+cmd : npx create-react-app app-name
+cmd : cd app-name 
+cmd : npm start 
+
+
+React +vite 
+npm create vite@latest my-react-app 
+cmd : npm run dev
+
+
+
+Normal react struct
+
+1) Node_module : npm install
+2) public :  index.html , Static image
+3) src : index.js , App.js
+4) package-lock.json : lock
+5) package.json
+
+
+Flow : index.html -> index.js -> App.js 
+user : App.js -> index.js -> index.html
+
+
+Floder : 
+main.js
+App.js
+
+
+
+
+
+
+
+
+
+
+
