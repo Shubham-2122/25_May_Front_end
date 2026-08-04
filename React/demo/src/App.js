@@ -1,7 +1,8 @@
 import React from "react";
 // import Hello from "./jsx/Hello";
 // import Css from "./Css/Css";
-import MainState from "./State/MainState";
+// import MainState from "./State/MainState";
+import MainProps from "./Props/MainProps";
 // import ClassCompo from "./Compo/ClassCompo";
 // import FuncCompo from "./Compo/FuncCompo";
 
@@ -20,8 +21,11 @@ function App() {
         {/* css */}
         {/* <Css /> */}
 
+        {/* Props */}
+        <MainProps />
+
         {/* State */}
-        <MainState />
+        {/* <MainState /> */}
     </div>
   )
 }
