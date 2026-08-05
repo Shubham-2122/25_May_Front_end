@@ -6,13 +6,20 @@
 */
 
 import React from 'react'
-import ClassState from './ClassState'
+// import ClassState from './ClassState'
+// import FuncState from './FuncState'
+import Funobj from './Funobj'
 
 function MainState() {
   return (
     <div>
         {/* ? class state  */}
-        <ClassState />
+        {/* <ClassState /> */}
+
+
+        {/* <FuncState /> */}
+        <Funobj />
+   
     </div>
   )
 }
