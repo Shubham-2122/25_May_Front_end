@@ -4,6 +4,9 @@ import React from "react";
 // import MainState from "./State/MainState";
 import FormData from "./FormHadling/FormData";
 import FormObj from "./FormHadling/FormObj";
+import EffectData from "./Effect/EffectData";
+import UserData from "./Effect/UserData";
+import UserAxios from "./Effect/UserAxios";
 // import MainProps from "./Props/MainProps";
 // import ClassCompo from "./Compo/ClassCompo";
 // import FuncCompo from "./Compo/FuncCompo";
@@ -31,7 +34,14 @@ function App() {
 
         {/* formhadling */}
         {/* <FormData /> */}
-        <FormObj />
+        {/* <FormObj /> */}
+
+        {/* effects  */}
+        {/* <EffectData /> */}
+        {/* <UserData /> */}
+
+        <UserAxios />
+
     </div>
   )
 }
