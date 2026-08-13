@@ -13,6 +13,12 @@ import Boostra from "./Boot/Boostra";
 import ReactCard from "./Boot/ReactCard";
 import MdBFooter from "./Boot/MdBFooter";
 import Login from "./Boot/Login";
+import Home from "./Layout/Pages/Home";
+import About from "./Layout/Pages/About";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Contact from "./Layout/Pages/Contact";
+import Navabar from "./Layout/Coman/Navabar";
+import Footer from "./Layout/Coman/Footer";
 // import MainProps from "./Props/MainProps";
 // import ClassCompo from "./Compo/ClassCompo";
 // import FuncCompo from "./Compo/FuncCompo";
@@ -20,9 +26,10 @@ import Login from "./Boot/Login";
 function App() {
   return (
     <div>
-      <h1>hello this App page</h1>
-      
-      {/* <ClassCompo />
+      <BrowserRouter >
+        {/* <h1>hello this App page</h1> */}
+
+        {/* <ClassCompo />
       <ClassCompo />
       <FuncCompo /> */}
 
@@ -50,11 +57,23 @@ function App() {
 
         {/* <MainContext /> */}
 
-        <Boostra />
+        {/* <Boostra />
         <ReactCard />
         <Login />
-        <MdBFooter />
+        <MdBFooter /> */}
 
+
+        {/* layout   */}
+        <Navabar />
+        <Routes>
+
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+
+      </BrowserRouter>
     </div>
   )
 }
