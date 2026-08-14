@@ -19,6 +19,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contact from "./Layout/Pages/Contact";
 import Navabar from "./Layout/Coman/Navabar";
 import Footer from "./Layout/Coman/Footer";
+import About1 from "./Layout/Pages/About1";
+import About2 from "./Layout/Pages/About2";
+import NotFound from "./Layout/Pages/NotFound";
 // import MainProps from "./Props/MainProps";
 // import ClassCompo from "./Compo/ClassCompo";
 // import FuncCompo from "./Compo/FuncCompo";
@@ -64,14 +67,19 @@ function App() {
 
 
         {/* layout   */}
-        <Navabar />
+        {/* <Navabar /> */}
         <Routes>
 
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />} >
+            <Route path="about1" element={<About1 />} />
+            <Route path="about2" element={<About2 />} />
+          </Route>
           <Route path="/contact" element={<Contact />} />
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
 
       </BrowserRouter>
     </div>

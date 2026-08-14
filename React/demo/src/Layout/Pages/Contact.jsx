@@ -5,9 +5,9 @@ import Footer from '../Coman/Footer'
 function Contact() {
   return (
     <div>
-        {/* <Navabar /> */}
+        <Navabar />
         <h1 className='bg-primary'>Contact Pages</h1>
-        {/* <Footer /> */}
+        <Footer />
     </div>
   )
 }
