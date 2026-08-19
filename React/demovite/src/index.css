@@ -1,1 +1,44 @@
 @import "tailwindcss";
+
+/* only for tag */
+@layer base{
+    h1{
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+/* custom compoenents use */
+@layer components{
+    .card{
+        height: 300px;
+        width: 200px;
+        border: 2px solid;
+    }
+    .btn{
+        background: linear-gradient(red,green,blue);
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background: lightcoral;
+    }
+}
+
+@layer utilities{
+   .padd{
+    padding: 30px;
+    margin: 20px;
+   }
+   .font{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+   .font2{
+    font-family: 'Times New Roman', Times, serif;
+   }
+   .font3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+   }
+}

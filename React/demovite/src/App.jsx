@@ -4,6 +4,7 @@ import Color from "./Compo/Color";
 import Space from "./Compo/Space";
 import Data from "./Compo/Data";
 import Fledata from "./Compo/Fledata";
+import Demo from "./Compo/Demo";
 
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
       {/* <Color /> */}
       {/* <Space /> */}
       {/* <Data /> */}
-      <Fledata />
+      {/* <Fledata /> */}
+
+    <Demo />
+
     </>
   )
 }
