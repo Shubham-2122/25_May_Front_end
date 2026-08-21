@@ -22,6 +22,8 @@ import Footer from "./Layout/Coman/Footer";
 import About1 from "./Layout/Pages/About1";
 import About2 from "./Layout/Pages/About2";
 import NotFound from "./Layout/Pages/NotFound";
+import TestData from "./Hooks/TestData";
+import DemoTest from "./Hooks/DemoTest";
 // import MainProps from "./Props/MainProps";
 // import ClassCompo from "./Compo/ClassCompo";
 // import FuncCompo from "./Compo/FuncCompo";
@@ -76,6 +78,8 @@ function App() {
             <Route path="about2" element={<About2 />} />
           </Route>
           <Route path="/contact" element={<Contact />} />
+          <Route path="/red" element={<TestData />} />
+          <Route path="/cus" element={<DemoTest />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

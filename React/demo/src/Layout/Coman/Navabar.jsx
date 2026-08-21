@@ -21,6 +21,12 @@ function Navabar() {
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/contact" >contact</NavLink>
                             </li>
+                             <li className="nav-item">
+                                <NavLink className="nav-link" to="/red" >reducer</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/cus" >Custom</NavLink>
+                            </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Dropdown
