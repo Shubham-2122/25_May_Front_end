@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function AnavTi({title,name}) {
   return (
@@ -9,7 +10,7 @@ function AnavTi({title,name}) {
                     <h1 className="display-3 mb-3 animated slideInDown">{title}</h1>
                     <nav aria-label="breadcrumb animated slideInDown">
                         <ol className="breadcrumb mb-0">
-                            <li className="breadcrumb-item"><a className="text-body" href="#">Home</a></li>
+                            <li className="breadcrumb-item"><Link className="text-body" to="/dash" >Home</Link></li>
                             <li className="breadcrumb-item"><a className="text-body" href="#">Pages</a></li>
                             <li className="breadcrumb-item text-dark active" aria-current="page">{name}</li>
                         </ol>

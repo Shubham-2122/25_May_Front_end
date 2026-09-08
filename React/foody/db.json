@@ -1,49 +1,64 @@
 {
-    "admin":[
-        {
-            "id":1,
-            "name":"admin",
-            "email":"admin@gmail.com",
-            "password":"123456"
-        }
-    ],
-    "users":[
-        {
-            "id":1,
-            "name":"user",
-            "email":"user@gmail.com",
-            "password":"123456",
-            "status":"unblock"
-        },
-        {
-            "id":2,
-            "name":"ketan",
-            "email":"ketan@gmail.com",
-            "password":"1234",
-            "status":"block"
-        }
-    ],
-    "products":[
-        {
-            "id":1,
-            "name":"Tomato",
-            "price":"23",
-            "category":"vegetable",
-            "img" :"https://cdn.zeptonow.com/production/ik-seo/tr:w-403,ar-739-739,pr-true,f-auto,q-40,dpr-2/cms/product_variant/bc32ce39-aa9d-4f9a-8c71-33aedd4da0d0/Organically-Grown-Tomato-Local.png"
-        },
-        {
-            "id":2,
-            "name":"Potato",
-            "price":"17",
-            "category":"vegetables",
-            "img" :"https://cdn.zeptonow.com/production/ik-seo/tr:w-403,ar-883-883,pr-true,f-auto,q-40,dpr-2/cms/product_variant/4d70541e-9299-4497-acc0-e402c64aefbe/Organically-Grown-Potato.png"
-        },
-        {
-            "id":3,
-            "name":"Apple",
-            "price":"17",
-            "category":"fruits",
-            "img" :"https://cdn.zeptonow.com/production/ik-seo/tr:w-470,ar-1024-1024,pr-true,f-auto,q-40,dpr-2/cms/product_variant/61bf6225-6aad-41bc-a106-778da40087cf/Apple-Shimla.jpeg"
-        }
-    ]
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "user",
+      "email": "user@gmail.com",
+      "password": "123456",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "ketan",
+      "email": "ketan@gmail.com",
+      "password": "1234",
+      "status": "block"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Tomato",
+      "price": "23",
+      "category": "vegetables",
+      "img": "https://cdn.zeptonow.com/production/ik-seo/tr:w-403,ar-739-739,pr-true,f-auto,q-40,dpr-2/cms/product_variant/bc32ce39-aa9d-4f9a-8c71-33aedd4da0d0/Organically-Grown-Tomato-Local.png"
+    },
+    {
+      "id": "2",
+      "name": "Potato",
+      "price": "17",
+      "category": "vegetables",
+      "img": "https://cdn.zeptonow.com/production/ik-seo/tr:w-403,ar-883-883,pr-true,f-auto,q-40,dpr-2/cms/product_variant/4d70541e-9299-4497-acc0-e402c64aefbe/Organically-Grown-Potato.png"
+    },
+    {
+      "id": "3",
+      "name": "Apple",
+      "price": "17",
+      "category": "fruits",
+      "img": "https://cdn.zeptonow.com/production/ik-seo/tr:w-470,ar-1024-1024,pr-true,f-auto,q-40,dpr-2/cms/product_variant/61bf6225-6aad-41bc-a106-778da40087cf/Apple-Shimla.jpeg"
+    },
+    {
+      "id": "wgecyu2ZOhU",
+      "name": "Custard Apple Semi Ripe",
+      "price": "35",
+      "category": "fruits",
+      "img": "https://cdn.zeptonow.com/production/ik-seo/tr:w-470,ar-1254-1254,pr-true,f-auto,q-40,dpr-2/cms/product_variant/fa6acfce-a598-4f3e-aa28-eb94df49d743/Custard-Apple-Semi-Ripe.png"
+    },
+    {
+      "id": "EUiofRb2KVs",
+      "name": "Watermelon Kiran (Tarbooj)",
+      "price": "45",
+      "category": "fruits",
+      "img": "https://cdn.zeptonow.com/production/ik-seo/tr:w-470,ar-3000-3000,pr-true,f-auto,q-40,dpr-2/cms/product_variant/16304024-e632-4b29-abb0-0320997422ce/Watermelon-Kiran-Tarbooj-.jpeg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

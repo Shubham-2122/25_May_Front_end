@@ -10,6 +10,7 @@ import Contact from './website/pages/Contact'
 import NotFound from './website/pages/NotFound'
 import Dashboard from './admin/Apages/Dashboard'
 import ProductsManage from './admin/Apages/ProductsManage'
+import ProductAdds from './admin/Apages/ProductAdds'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         {/* admin */}
         <Route path='/dash' element={<Dashboard />} />
         <Route path='/productmanage' element={<ProductsManage />} />
+        <Route path='/productadd' element={<ProductAdds />} />
 
       </Routes>
     </div>

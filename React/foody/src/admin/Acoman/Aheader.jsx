@@ -20,13 +20,12 @@ function Aheader() {
                         <div className="navbar-nav ms-auto p-4 p-lg-0">
                             <NavLink to="/dash" className="nav-item nav-link ">Home</NavLink>
                             
-                            <NavLink to="/productmanage" className="nav-item nav-link">Products</NavLink>
                             <div className="nav-item dropdown">
-                                <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
                                 <div className="dropdown-menu m-0">
-                                    <NavLink to="/blog" className="dropdown-item">Blog Grid</NavLink>
-                                    <NavLink to="/feature" className="dropdown-item">Our Features</NavLink>
-                                    <NavLink to="/test" className="dropdown-item">Testimonial</NavLink>
+                                    <NavLink to="/productmanage" className="dropdown-item">Manage</NavLink>
+                                    <NavLink to="/productadd" className="dropdown-item">Add</NavLink>
+                                   
                                     
                                 </div>
                             </div>
