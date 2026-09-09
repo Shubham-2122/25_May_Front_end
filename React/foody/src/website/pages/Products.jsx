@@ -3,24 +3,31 @@ import Header from '../coman/Header'
 import NavTitle from '../coman/NavTitle'
 import Footer from '../coman/Footer'
 import axios from 'axios'
+import useAPI from '../../custom/useAPI'
 
 function Products() {
 
-    const [product, setproduct] = useState([])
+    // const [product, setproduct] = useState([])
 
-    useEffect(() => {
-        fetchproduct()
+    // useEffect(() => {
+    //     fetchproduct()
+    // }, [])
+
+    // const fetchproduct = async () => {
+    //     try {
+    //         const res = await axios.get("http://localhost:3000/products")
+    //         console.log(res.data)
+    //         setproduct(res.data)
+    //     } catch (error) {
+    //         console.log("product not found", error)
+    //     }
+    // }
+
+    const {test,fetchdata} = useAPI("http://localhost:3000/products")
+
+      useEffect(() => {
+        fetchdata()
     }, [])
-
-    const fetchproduct = async () => {
-        try {
-            const res = await axios.get("http://localhost:3000/products")
-            console.log(res.data)
-            setproduct(res.data)
-        } catch (error) {
-            console.log("product not found", error)
-        }
-    }
 
     return (
         <div>
@@ -56,9 +63,9 @@ function Products() {
                             <div id="tab-1" className="tab-pane fade show p-0 active">
                                 <div className="row g-4">
                                     {
-                                        product && product.map((data, idnex) => {
+                                        test && test.map((data, idnex) => {
                                             return (
-                                                <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                                <div key={idnex} className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                                     <div className="product-item">
                                                         <div className="position-relative bg-light overflow-hidden">
                                                             <img className="img-fluid w-100" src={data.img} alt />
