@@ -3,6 +3,7 @@ import Aheader from '../Acoman/Aheader'
 import AnavTi from '../Acoman/AnavTi'
 import axios from 'axios'
 import useAPI from '../../custom/useAPI'
+import { toast } from 'react-toastify'
 
 function ProductsManage() {
 
@@ -44,8 +45,25 @@ function ProductsManage() {
             const res = await axios.get(`http://localhost:3000/products/${id}`)
             console.log(res.data)
             setsigpro(res.data)
+            
         } catch (error) {
             console.log("api error", error)
+        }
+    }
+
+
+    // single product delete 
+
+    const singlepro =async(id)=>{
+        try {
+            const res = await axios.delete(`http://localhost:3000/products/${id}`) 
+            console.log(res.data) 
+            console.log("delete product")
+            toast.success("Product deleted successfully")
+            fetchdata()         
+        } catch (error) {
+            console.log("Error api ",error)
+            toast.error("Api data not Found")
         }
     }
 
@@ -81,7 +99,7 @@ function ProductsManage() {
                                         <td>
                                             <button className='btn btn-info' data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => signleproduct(val.id)}>View</button>
                                             <button className='btn btn-success mx-2'>Edit</button>
-                                            <button className='btn btn-danger'>Delete</button>
+                                            <button className='btn btn-danger' onClick={()=>singlepro(val.id)} >Delete</button>
                                         </td>
                                     </tr>
                                 )

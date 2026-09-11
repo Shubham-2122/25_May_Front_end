@@ -3,6 +3,7 @@ import Aheader from '../Acoman/Aheader'
 import AnavTi from '../Acoman/AnavTi'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 function ProductAdds() {
 
@@ -31,7 +32,8 @@ function ProductAdds() {
         try {
 
             if (product.category == "" || product.img == "" || product.name == "" || product.price == "") {
-                console.log("pls required product field")
+                // console.log("pls required product field")
+                toast.error("pls required product field")
                 return false
             }
 
@@ -46,9 +48,11 @@ function ProductAdds() {
             })
             redirect("/productmanage")
             console.log("product Successfully added")
+            toast.success("product Successfully added")
 
         } catch (error) {
             console.log("Api data not Found")
+            toast.error("Api data not Found")
         }
     }
 

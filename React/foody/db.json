@@ -39,25 +39,18 @@
       "img": "https://cdn.zeptonow.com/production/ik-seo/tr:w-403,ar-883-883,pr-true,f-auto,q-40,dpr-2/cms/product_variant/4d70541e-9299-4497-acc0-e402c64aefbe/Organically-Grown-Potato.png"
     },
     {
-      "id": "3",
-      "name": "Apple",
-      "price": "17",
+      "id": "9KWUwEB0684",
+      "name": "Dragon Fruit Red",
+      "price": "15",
       "category": "fruits",
-      "img": "https://cdn.zeptonow.com/production/ik-seo/tr:w-470,ar-1024-1024,pr-true,f-auto,q-40,dpr-2/cms/product_variant/61bf6225-6aad-41bc-a106-778da40087cf/Apple-Shimla.jpeg"
+      "img": "https://cdn.zeptonow.com/production/ik-seo/tr:w-470,ar-3000-3000,pr-true,f-auto,q-40,dpr-2/cms/product_variant/f8263004-d030-47c4-91d7-64e68d4ff2f0/Dragon-Fruit-Red.jpg"
     },
     {
-      "id": "wgecyu2ZOhU",
-      "name": "Custard Apple Semi Ripe",
-      "price": "35",
+      "id": "2sBMi2cX-FQ",
+      "name": "Guava Indian",
+      "price": "12",
       "category": "fruits",
-      "img": "https://cdn.zeptonow.com/production/ik-seo/tr:w-470,ar-1254-1254,pr-true,f-auto,q-40,dpr-2/cms/product_variant/fa6acfce-a598-4f3e-aa28-eb94df49d743/Custard-Apple-Semi-Ripe.png"
-    },
-    {
-      "id": "EUiofRb2KVs",
-      "name": "Watermelon Kiran (Tarbooj)",
-      "price": "45",
-      "category": "fruits",
-      "img": "https://cdn.zeptonow.com/production/ik-seo/tr:w-470,ar-3000-3000,pr-true,f-auto,q-40,dpr-2/cms/product_variant/16304024-e632-4b29-abb0-0320997422ce/Watermelon-Kiran-Tarbooj-.jpeg"
+      "img": "https://cdn.zeptonow.com/production/ik-seo/tr:w-470,ar-3000-3000,pr-true,f-auto,q-40,dpr-2/cms/product_variant/bef41aa6-5251-407a-82e8-d5fbe90f4713/Guava-Indian.jpeg"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
