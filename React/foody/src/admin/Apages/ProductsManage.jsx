@@ -43,9 +43,9 @@ function ProductsManage() {
     const signleproduct = async (id) => {
         try {
             const res = await axios.get(`http://localhost:3000/products/${id}`)
-            console.log(res.data)
+            // console.log(res.data)
             setsigpro(res.data)
-            
+
         } catch (error) {
             console.log("api error", error)
         }
@@ -54,18 +54,67 @@ function ProductsManage() {
 
     // single product delete 
 
-    const singlepro =async(id)=>{
+    const singlepro = async (id) => {
         try {
-            const res = await axios.delete(`http://localhost:3000/products/${id}`) 
-            console.log(res.data) 
+            const res = await axios.delete(`http://localhost:3000/products/${id}`)
+            // console.log(res.data)
             console.log("delete product")
             toast.success("Product deleted successfully")
-            fetchdata()         
+            fetchdata()
         } catch (error) {
-            console.log("Error api ",error)
+            console.log("Error api ", error)
             toast.error("Api data not Found")
         }
     }
+
+    // editting
+    const [edit, setedit] = useState(null)
+    const [editing, setediting] = useState({
+        id: "",
+        name: "",
+        price: "",
+        category: "",
+        img: ""
+    })
+
+    console.log(edit)
+
+    const getopen = (data) => {
+        // console.log(data)
+        setedit(data)
+        setediting(data)
+    }
+
+    const getchange = (e) => {
+        setediting({
+            ...editing,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    const getupdate = async (e) => {
+        e.preventDefault()
+
+        try {
+            const res = await axios.put(`http://localhost:3000/products/${editing.id}`, editing)
+            console.log(res.data)
+            toast.success("Product Updated successfully")
+            setediting({
+                id: "",
+                name: "",
+                price: "",
+                category: "",
+                img: ""
+            })
+            setedit(null)
+            fetchdata()
+        } catch (error) {
+            toast.error("Api data not Found", error)
+        }
+    }
+
+
+
 
     return (
         <div>
@@ -98,8 +147,8 @@ function ProductsManage() {
                                         <td>{val.category}</td>
                                         <td>
                                             <button className='btn btn-info' data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => signleproduct(val.id)}>View</button>
-                                            <button className='btn btn-success mx-2'>Edit</button>
-                                            <button className='btn btn-danger' onClick={()=>singlepro(val.id)} >Delete</button>
+                                            <button className='btn btn-success mx-2' onClick={() => getopen(val)}>Edit</button>
+                                            <button className='btn btn-danger' onClick={() => singlepro(val.id)} >Delete</button>
                                         </td>
                                     </tr>
                                 )
@@ -109,6 +158,54 @@ function ProductsManage() {
                     </tbody>
                 </table>
 
+                {
+                    edit && (
+                        <div className="container my-5">
+                            <div className="col- col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                                <h1>Product Update form</h1>
+                                <form >
+                                    <div className="row g-3">
+                                        <div className="col-md-6">
+                                            <div className="form-floating">
+                                                <input name='name' onChange={getchange} value={editing.name} type="text" className="form-control" id="name" placeholder="Product Name" />
+                                                <label htmlFor="name">Product Name</label>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <div className="form-floating">
+                                                <input name='price' onChange={getchange} value={editing.price} type="text" className="form-control" id="price" placeholder="Product Price" />
+                                                <label htmlFor="price">Product Price</label>
+                                            </div>
+                                        </div>
+
+                                        <div className="col-12">
+                                            <div className="form-floating">
+                                                <select name='category' onChange={getchange} value={editing.category} class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                    <option hidden>Select your Category</option>
+                                                    <option value="vegetables">Vegetables</option>
+                                                    <option value="fruits">Fruits</option>
+                                                </select>
+                                                <label for="floatingSelect">Select your Category</label>
+                                            </div>
+                                        </div>
+                                        <div className="col-12">
+                                            <div className="form-floating">
+                                                <input name='img' onChange={getchange} value={editing.img} type="url" className="form-control" id="img" placeholder="Product Image url" />
+                                                <label htmlFor="img">Product image url</label>
+
+                                            </div>
+                                        </div>
+                                        <div className="col-12">
+                                            <button className="btn btn-primary rounded-pill  py-3 px-5" type="submit" onClick={getupdate}>Product Update</button>
+                                            <button className="btn btn-primary rounded-pill py-3 px-5" onClick={() => setedit(null)}>Product cancle</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    )
+                }
+
                 <div className="modal fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog">
                         <div className="modal-content">
@@ -117,7 +214,7 @@ function ProductsManage() {
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
                             </div>
                             <div className="modal-body">
-                                <div  className="col wow fadeInUp" data-wow-delay="0.1s">
+                                <div className="col wow fadeInUp" data-wow-delay="0.1s">
                                     <div className="product-item">
                                         <div className="position-relative bg-light overflow-hidden">
                                             <img className="img-fluid w-50" src={sigpro.img} alt />
@@ -127,7 +224,7 @@ function ProductsManage() {
                                             <a className="d-block h5 mb-2" href>{sigpro.name}</a>
                                             <span className="text-primary me-1">${sigpro.price}</span>
                                         </div>
-                                       
+
                                     </div>
                                 </div>
                             </div>

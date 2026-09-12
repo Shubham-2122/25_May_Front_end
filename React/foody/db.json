@@ -33,15 +33,15 @@
     },
     {
       "id": "2",
-      "name": "Potato",
+      "name": "Potato vegi",
       "price": "17",
       "category": "vegetables",
       "img": "https://cdn.zeptonow.com/production/ik-seo/tr:w-403,ar-883-883,pr-true,f-auto,q-40,dpr-2/cms/product_variant/4d70541e-9299-4497-acc0-e402c64aefbe/Organically-Grown-Potato.png"
     },
     {
       "id": "9KWUwEB0684",
-      "name": "Dragon Fruit Red",
-      "price": "15",
+      "name": "Dragon Red",
+      "price": "20",
       "category": "fruits",
       "img": "https://cdn.zeptonow.com/production/ik-seo/tr:w-470,ar-3000-3000,pr-true,f-auto,q-40,dpr-2/cms/product_variant/f8263004-d030-47c4-91d7-64e68d4ff2f0/Dragon-Fruit-Red.jpg"
     },
