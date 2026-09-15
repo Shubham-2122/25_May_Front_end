@@ -12,6 +12,7 @@ import Dashboard from './admin/Apages/Dashboard'
 import ProductsManage from './admin/Apages/ProductsManage'
 import ProductAdds from './admin/Apages/ProductAdds'
 import { Slide, ToastContainer, toast } from 'react-toastify';
+import Alogin from './admin/Apages/Alogin'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path='/dash' element={<Dashboard />} />
           <Route path='/productmanage' element={<ProductsManage />} />
           <Route path='/productadd' element={<ProductAdds />} />
+          <Route path='/alogin' element={<Alogin />} />
 
         </Routes>
 
