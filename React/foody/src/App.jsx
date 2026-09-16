@@ -13,6 +13,8 @@ import ProductsManage from './admin/Apages/ProductsManage'
 import ProductAdds from './admin/Apages/ProductAdds'
 import { Slide, ToastContainer, toast } from 'react-toastify';
 import Alogin from './admin/Apages/Alogin'
+import Login from './website/pages/Login'
+import Register from './website/pages/Register'
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Route path='/test' element={<Testi />} />
           <Route path='/feature' element={<Feature />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
 
 
           <Route path='*' element={<NotFound />} />
