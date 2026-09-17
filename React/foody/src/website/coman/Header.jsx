@@ -1,7 +1,24 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 function Header() {
+
+    const redirect = useNavigate()
+
+    useEffect(()=>{
+        if(!localStorage.getItem("Uid")){
+            redirect("/login")
+        }
+    })
+
+    const logout=()=>{
+        localStorage.removeItem("Uid")
+        localStorage.removeItem("Uname")
+        toast.success("logout Successfully")
+        redirect("/login")
+    }
+
     return (
         <div>
 
@@ -42,6 +59,31 @@ function Header() {
                                 </div>
                             </div>
                             <NavLink to="/contact" className="nav-item nav-link">Contact Us</NavLink>
+                              {
+                                // Acii 
+                                (()=>{
+                                    if(localStorage.getItem("Uid")){
+                                        return(
+                                            <NavLink to="/edit" className="nav-item nav-link">{localStorage.getItem("Uname")}</NavLink>
+                                        )
+                                    }
+                                })()
+                            }
+
+                            {
+                                (()=>{
+                                    if(localStorage.getItem("Uid")){
+                                        return(
+                                            <NavLink onClick={logout} className="nav-item nav-link">Logout</NavLink>
+                                        )
+                                    }
+                                    else{
+                                        return(
+                                            <NavLink to="/login" className="nav-item nav-link">login</NavLink>
+                                        )
+                                    }
+                                })()
+                            }
                         </div>
                         <div className="d-none d-lg-flex ms-2">
                             <a className="btn-sm-square bg-white rounded-circle ms-3" href>

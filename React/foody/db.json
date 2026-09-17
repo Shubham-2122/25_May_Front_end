@@ -31,8 +31,15 @@
     {
       "id": "acx3cHCugDE",
       "name": "krish",
-      "email": "krish@gmail.com",
+      "email": "krishp@gmail.com",
       "password": "123456",
+      "status": "unblock"
+    },
+    {
+      "id": "toO6nQJ6sFI",
+      "name": "mahir",
+      "email": "mahir@gmail.com",
+      "password": "1234",
       "status": "unblock"
     }
   ],

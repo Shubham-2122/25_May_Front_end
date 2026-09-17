@@ -15,6 +15,7 @@ import { Slide, ToastContainer, toast } from 'react-toastify';
 import Alogin from './admin/Apages/Alogin'
 import Login from './website/pages/Login'
 import Register from './website/pages/Register'
+import EditProdfile from './website/pages/EditProdfile'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          <Route path='/edit' element={<EditProdfile />} />
 
 
           <Route path='*' element={<NotFound />} />
