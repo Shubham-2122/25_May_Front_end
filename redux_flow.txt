@@ -1,0 +1,37 @@
+redux : javascript libray 
+	: global Aplication 
+	: State management / Complex state 
+
+react+redux 
+
+react : single store
+      : global easy
+      : compoenent base
+
+agul/vue : multiple store
+	 : compoent
+
+react+redux old 
+
+USer action
+
+1)store : Book Store : Shopkeeper : data pass 
+2)Action : user buy 
+3)Reducer : Logic -> User  
+
+
+New redux : RTK : toolkit
+1) store 
+2) Slice : action + reducer
+
+
+1) useContext => useSeletor() : state value
+2) useReducer => usedispatch() : state change
+
+
+
+
+
+
+
+ 
