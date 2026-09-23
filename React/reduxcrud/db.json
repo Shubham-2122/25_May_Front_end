@@ -1,0 +1,18 @@
+{
+    "users":[
+        {
+            "id":1,
+            "name":"ketan",
+            "email":"ketan@gmail.com",
+            "phone":"62567672",
+            "password":"123456"
+        },
+        {
+            "id":2,
+            "name":"het",
+            "email":"het@gmail.com",
+            "phone":"62567672",
+            "password":"1234"
+        }
+    ]
+}
