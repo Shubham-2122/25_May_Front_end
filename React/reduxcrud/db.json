@@ -1,18 +1,42 @@
 {
-    "users":[
-        {
-            "id":1,
-            "name":"ketan",
-            "email":"ketan@gmail.com",
-            "phone":"62567672",
-            "password":"123456"
-        },
-        {
-            "id":2,
-            "name":"het",
-            "email":"het@gmail.com",
-            "phone":"62567672",
-            "password":"1234"
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "name": "ketan",
+      "email": "ketan@gmail.com",
+      "phone": "62567672",
+      "password": "123456"
+    },
+    {
+      "id": "TXCSEbF_GAA",
+      "name": "Jigar Thakkar",
+      "email": "englishstorytellingniche@gmail.com",
+      "phone": "23465783425",
+      "password": "21343214"
+    }
+  ],
+  "products":[
+    {
+      "id":1,
+      "name":"iQOO Z11xa 5G ",
+      "price":"28,999",
+      "category":"iQOO",
+      "image":"https://m.media-amazon.com/images/I/41reRLeBjzL._SY300_SX300_QL70_FMwebp_.jpg"
+    },
+    {
+      "id":2,
+      "name":"Samsung Galaxy A56 5G Mobile",
+      "price":"36,999 ",
+      "category":"Samsung ",
+      "image":"https://m.media-amazon.com/images/I/71NzuVWI-nL._SX569_.jpg"
+    },
+      {
+      "id":3,
+      "name":"onePlus N6 | 4GB+128GB",
+      "price":"24,999",
+      "category":"onePlus N6 ",
+      "image":"https://m.media-amazon.com/images/I/61f5ZCuSD6L._SX569_.jpg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
