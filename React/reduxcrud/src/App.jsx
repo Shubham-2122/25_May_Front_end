@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import AddUser from './Component/AddUser'
 import Header from './Component/Header'
 import ProductData from './Component/ProductData'
+import Edit from './Component/Edit'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={<UserDetails />} />
         <Route path='/add' element={<AddUser />} />
          <Route path='/Product' element={<ProductData />} />
+         <Route path='/edit/:id' element={<Edit />} />
       </Routes>
     </div>
     </BrowserRouter>
