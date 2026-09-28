@@ -22,9 +22,13 @@ function Header() {
                              <li className="nav-item">
                                 <NavLink className="nav-link" to="/Product" >Products</NavLink>
                             </li>
+                             <li className="nav-item">
+                                <NavLink className="nav-link" to="/Pro" >Products Test</NavLink>
+                            </li>
                             <li className="nav-item">
                                 <a className="nav-link disabled" aria-disabled="true">Disabled</a>
                             </li>
+                           
                         </ul>
                         <form className="d-flex" role="search">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />

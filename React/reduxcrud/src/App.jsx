@@ -5,6 +5,7 @@ import AddUser from './Component/AddUser'
 import Header from './Component/Header'
 import ProductData from './Component/ProductData'
 import Edit from './Component/Edit'
+import Product from './Component/Product'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/add' element={<AddUser />} />
          <Route path='/Product' element={<ProductData />} />
          <Route path='/edit/:id' element={<Edit />} />
+         <Route path='/pro' element={<Product />} />
       </Routes>
     </div>
     </BrowserRouter>
